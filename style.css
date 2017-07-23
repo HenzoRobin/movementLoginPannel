@@ -1,0 +1,129 @@
+body {
+	background-color:#eee;
+	font-family: 'microsoft yahei' ;
+}
+* {
+	transition:background-color .3s;
+}
+.log h2 {
+	font-size: 27px;
+	color: #983344;
+} 
+.sign h2 {
+	font-size: 27px;
+	color: #0f7ec7;
+}
+.container {
+	width: 800px;
+	height: 340px;
+	margin: 100px auto;
+	background-color: #fff;
+	position: relative;
+}
+.backbox {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.login-msg {
+	float: left;
+	background-color: #983344;
+	width: 50%;
+	height: 100%;
+}
+.signup-msg {
+	float: right;
+	background-color: #0f7ec7;
+	width: 50%;
+	height: 100%;
+}
+.content {
+	margin-top: 70px;
+	margin-left: 20px;
+	color: #fff;
+}
+.title {
+	font-size: 25px;
+}
+.login-msg button {
+	background-color: #0f7ec7;
+} 
+.login-msg button:hover{
+	background-color: #42adf3;
+} 
+.signup-msg button {
+  background-color: #983344;
+}
+.signup-msg button:hover {
+	background-color:#e2576f;
+}
+.log button {
+  background-color: #983344;
+}
+.sign button {
+  background-color: #0f7ec7;
+}
+.log button:hover {
+  background-color: #e2576f;
+}
+.sign button:hover {
+  background-color: #983344;
+}
+.login-msg button ,
+.signup-msg button {
+  outline: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #fff;
+  border:0;
+}
+.frontbox {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right:0;
+}
+
+.inputbox {
+	margin-top:30px;
+}
+.log, .sign {
+	text-align: center;
+	padding:20px;
+}
+.log input ,
+.sign input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: #f2f2f2;	
+	border:none;
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.log button,
+.sign button {
+  border:0;
+  outline: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.log p {
+	color:blue;
+	cursor: pointer;
+}
+.log {
+	display: block;
+}
+.sign {
+	display: none;
+}

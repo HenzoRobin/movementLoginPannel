@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LOGIN</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="move.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="backbox">
+			<div class="login-msg">
+				<div class="content">
+					<p class="title">没有账号？</p>
+					<p>点击注册浏览更多内容</p>
+					<button id="swith1">注 册</button>
+				</div>
+			</div>
+			<div class="signup-msg">
+				<div class="content">
+					<p class="title">已有账号？</p>
+					<p>点击登录查看信息</p>
+					<button id="switch2">登 录</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="frontbox" id="frontbox">
+			<div class="log" id="log">
+				<h2>登 录</h2>
+				<div class="inputbox">
+					<input type="text" placeholder="账号/邮箱...">
+					<input type="password" placeholder="请输入密码...">
+				</div>
+				<p>忘记密码？</p>
+				<button type="butotn">登 录</button>
+			</div>
+			<div class="sign" id="sign">
+				<h2>注 册</h2>
+				<div class="inputbox">
+					<input type="text" placeholder="账号...">
+					<input type="password" placeholder="昵称...">
+					<input type="password" placeholder="密码...">
+				</div>
+				<button type="butotn">注 册</button>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	window.onload = function(){
+		moving1();
+		moving2();
+	}
+		function moving1() {
+			
+			var m1 = document.getElementById('swith1');
+			var bo = document.getElementById('frontbox');
+			var h1 = document.getElementById('log');
+			var s1 = document.getElementById('sign');
+			m1.onclick = function(){
+				move(bo,'right',400);
+				h1.style.display = 'none';
+			 	s1.style.display = 'block';
+			}
+
+		}
+
+		function moving2() {
+
+			var m2 = document.getElementById('switch2');
+			var bo = document.getElementById('frontbox');
+			var h1 = document.getElementById('log');
+			var s1 = document.getElementById('sign');
+			m2.onclick = function(){
+				move(bo,'right',0);
+				h1.style.display = 'block';
+				s1.style.display = 'none';
+			}
+
+		}
+	</script>
+</body>
+</html>
